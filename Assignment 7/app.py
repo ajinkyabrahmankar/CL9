@@ -30,6 +30,10 @@ def addtie():
 def score():
     return jsonify({'Win': num_win, 'Loss': num_loss, 'Tie': num_tie})
 
+@app.route('/')
+def home():
+    return "HOME PAGE"
+
 # driver function
 if __name__ == '__main__':
 
