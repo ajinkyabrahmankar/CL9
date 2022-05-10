@@ -9,7 +9,7 @@ public class RMIClient {
 		double a = sc.nextDouble();
 		double b = sc.nextDouble();
 		
-		rmiinterfacea obj = (rmiinterfacea)Naming.lookup("ADD");
+		RMI_Interface obj = (RMI_Interface)Naming.lookup("ADD");
 		double n = obj.addition(a, b);
 		
 		System.out.println("Addition : " + n);
