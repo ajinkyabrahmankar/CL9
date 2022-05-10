@@ -3,7 +3,7 @@ import java.rmi.registry.*;
 
 public class RMIServer {
 	public static void main(String[] args) throws Exception {
-		rmiimpla obj = new rmiimpla();
+		RMI_Impl obj = new RMI_Impl();
 		
 		Naming.rebind("ADD", obj);
 		System.out.println("Server started..");
